@@ -18,8 +18,21 @@
       {
         "command": "error-catalog-demo.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "errorCatalog.generateErrorCode",
+        "title": "Error Catalog: Generate Error Code"
       }
     ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "errorCatalog.generateErrorCode",
+          "when": "resourceLangId == java",
+          "group": "navigation"
+        }
+      ]
+    },
     "views": {
       "explorer": [
         {
